@@ -1,0 +1,153 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrartcl
+\use_default_options true
+\language ngerman
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Vorlesung Multidimensionale und Multimodale Signale, SoSe 2010
+\end_layout
+
+\begin_layout Author
+Sebastian Rockel
+\begin_inset Newline newline
+\end_inset
+
+Matr.-Nr.
+ 6095961
+\end_layout
+
+\begin_layout Section
+Übung (Abgabe: 14.04.2010, 8.30 Uhr, schriftlich)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Beschreiben Sie anschaulich den Begriff Frequenz anhand verschiedener Beispiele.
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+Die Frequenz ist die Häufigkeit eines sich regelmäßig wiederholenden Vorgangs.
+ [wikipedia]
+\begin_inset Newline newline
+\end_inset
+
+Frequenzen treten in unserer (Um-)Welt überall auf.
+ Beispielsweise hat der Strom aus unserer Steckdose eine Frequenz von 50
+ Herz, er schwingt also 50 mal in der Sekunde.
+ Eine Schwingung fasst dabei den Vorgang zusammen, in dem die schwingende
+ Größe wieder am Ausgangspunkt angelangt ist.
+ Weitere sind z.B.
+ Puls, Bildschirmwiederholfrequenz, Lichtspektrum, Schwingfrequenz von Atomen/Te
+ilchen.
+\begin_inset Newline newline
+\end_inset
+
+Jeder Körper scheint eine Eigenfrequenz zu haben, in der er 
+\begin_inset Quotes gld
+\end_inset
+
+schwingt
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Sehen Sie einen Zusammenhang zwischen dem Begriff Frequenz und der folgenden
+ Abbildung?
+\begin_inset Newline newline
+\end_inset
+
+
+\emph default
+Bilder kann man neben der ikonischen Ebene auch in der spektralen Ebene
+ betrachten.
+ Dabei sind hohe Frequenzen für die scharfen Anteile und niedrige für die
+ verschwommenen zuständig.
+ Entsprechend kann man ein Bild mittels Hochpass schärfen (tiefe Frequenzen
+ werden gefiltert) und mittels Tiefpass weich zeichnen (hohe Frequenzen
+ werden gesperrt).
+\begin_inset Newline newline
+\end_inset
+
+Das Bild enthält hohe und tiefe Frequenzen von 2 ursprünglich verschiedenen
+ Bildern.
+ Die scharfen Anteile gehören zu Albert Einstein, die unscharfen Marilyn
+ Monroe.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Lesen Sie den Artikel auf der Seite XY und vergleichen Sie dies mit der
+ obigen Abbildung.
+\begin_inset Newline newline
+\end_inset
+
+
+\emph default
+Die scharfen Gesichtskonturen der Mona Lisa zeigen kein Lächeln (bzw.
+ wenig), die Unscharfen (Schatten der Gesichtspartien, bes.
+ Wangen) zeigen eins.
+\begin_inset Newline newline
+\end_inset
+
+Das menschliche Sehsystem kann scharfe Kanten im Fokus-Zentrum sehr gut
+ erkennen, im äußeren Sichtfeld werden dagegen nur unscharfe Objekte wahrgenomme
+n.
+\begin_inset Newline newline
+\end_inset
+
+Sieht man nun direkt auf den Mund überwiegt dieser in der Wahrnehmung (nicht
+ lächelnd).
+ Nimmt man dagegen das Gesicht im peripheren Sichtbereich war, überwiegen
+ die unscharfen Konturen (lächelnd).
+\end_layout
+
+\end_body
+\end_document
