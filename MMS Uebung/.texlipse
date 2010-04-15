@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Mon Apr 12 19:22:11 CEST 2010
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=MMS \u00DCbung.tex
+outputFile=MMS \u00DCbung.pdf
+langSpell=en
+markDer=true
+srcDir=
