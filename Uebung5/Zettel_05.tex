@@ -1,0 +1,32 @@
+\section*{5. \"Ubung (Abgabe: 02.06.2010, 8.30 Uhr, schriftlich)}
+
+\subsection*{1. Leiten Sie die Fouriertransformierte der Funktion $\delta_{x}(x,y):=\delta(x)$ her, wobei $\delta(x)$ die eindimensionale Dirac-Sto{\ss}-Funktion bezeichnet.}
+%Siehe Abbildung \ref{fig:5.1}.
+\begin{figure}[h] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.8\textwidth]{Uebung5/5_1.pdf} 
+   \caption{$\delta_{x}(x,y)$}
+   \label{fig:5.1}
+\end{figure}
+
+\begin{eqnarray*}
+f(x,y) & = & f_{x}(x)\cdot f_{y}(y) \\
+\delta_{xy}(x,y) & = & \delta(x)\cdot\delta(y) \\
+\delta_{x}(x,y) &=& \delta(x)\cdot 1(y) \\ \\
+F(\delta(x)) &=& 1(\omega) \\ \\
+F(\delta(x)\cdot 1(y)) &=& \delta(x) * 1(y) = 1(\omega) \; _{\square}
+\end{eqnarray*}
+
+\subsection*{2. Beschreiben Sie anschaulich das Ergebnis der Faltung eines zweidimensionalen Signals mit der Funktion $\delta_{x}(x,y)$. Was bedeutet dies im Frequenzbereich?}
+
+\begin{eqnarray*}
+\delta_{x}(x,y)*f(u,v) &=& \mathbf{F(\delta_{x}(x,y))}\cdot F(f(u,v)) \; \hbox{(Faltungstheorem)} \\
+F(\delta_{x}(x,y)) &=& \mathbf{1(\omega)} \\
+\end{eqnarray*}
+\\
+Im Ortsraum bedeutet die Faltung eine Ausblendung der x-Achse der zweidimensionalen Funktion. Die y-Achse bleibt erhalten (siehe Abbildung \ref{fig:5.1}). Dieses Ergebnis beruht auf der Sieb/Ausblend-Eigenschaft der $\delta$-Funktion. \\
+Im Frequenzbereich bedeutet die Multiplikation mit $1(\omega)$ eine die zweidimensionale Funktion erhaltende (neutrale) Operation.
+
+\subsection*{3. Berechnen Sie das Integral unter der Funktion $\delta^{2}(x,y):=\delta_{x}(x,y)\cdot\delta_{y}(y,x)$.}
+
+\subsection*{4. Gegeben sei eine beliebige reellwertige Bildfunktion $f(x,y)$. Nun faltet man diese Funktion mit einer geraden reellwertigen Funktion $g$ (d.h. $g(x,y)=g(-x,-y)$). Wie ver\"andert sich das Quadrat des Phasenspektrums?}
