@@ -28,5 +28,29 @@ Im Ortsraum bedeutet die Faltung eine Ausblendung der x-Achse der zweidimensiona
 Im Frequenzbereich bedeutet die Multiplikation mit $1(\omega)$ eine die zweidimensionale Funktion erhaltende (neutrale) Operation.
 
 \subsection*{3. Berechnen Sie das Integral unter der Funktion $\delta^{2}(x,y):=\delta_{x}(x,y)\cdot\delta_{y}(y,x)$.}
+\begin{align*}
+& \int{\delta^{2}(x,y)~dx~dy}\\
+= & \int{\delta_{x}(x,y)\cdot\delta_{y}(y,x)~dx~dy}\\
+= & \int{\delta_{x}(x,y)~dx}~\cdot~\int{\delta_{y}(y,x)~dy}\\
+= & \int{\delta(x) \cdot 1(y)~dx}~\cdot~\int{\delta(y) \cdot 1(x)~dy}\\
+= & 1 \cdot 1\\
+= & 1
+\end{align*}
 
 \subsection*{4. Gegeben sei eine beliebige reellwertige Bildfunktion $f(x,y)$. Nun faltet man diese Funktion mit einer geraden reellwertigen Funktion $g$ (d.h. $g(x,y)=g(-x,-y)$). Wie ver\"andert sich das Quadrat des Phasenspektrums?}
+Phasenspektrum ist definiert als $\Phi = \arctan{\frac{Im(u,v)}{Re(u,v)}}$
+Bei der Faltung einer beliebigen reellwertige Bildfunktion $f(x,y)$ mit einer geraden reellwertigen Funktion $g$ m\"ussen zwei F\"alle betrachtet werden:
+\begin{enumerate}
+\item Eine gerade reellwertige Bildfunktion $f(x,y)$ gefaltet mit $g$. Bei der Faltung entsteht wieder eine gerade reellwertige Funktion. Die Funktion besitzt nur einen reellen Anteil und keinen imagin\"aren. Daraus folgt f\"ur $\Phi^2$:\\
+\begin{align*}
+\Phi^2 &= (\arctan{\frac{0}{Re(u,v)}})^2\\
+&= (\arctan(0))^2\\
+&= 0
+\end{align*}
+\item Eine ungerade reellwertige Bildfunktion $f(x,y)$ gefaltet mit $g$. Bei der Faltung entsteht eine gerade reellwertige Funktion mit einem ungeraden Imagin\"aranteil. F\"ur das Phasenspektrum folgt:\\
+\begin{align*}
+\Phi^2 &= (\arctan{\frac{Im(u,v)}{Re(u,v)}})^2\\
+&= \lim_{\frac{Im(u,v)}{Re(u,v)} \rightarrow \pm\infty} (\arctan{\frac{Im(u,v)}{Re(u,v)}})^2\\
+&= \frac{\pi^2}{4}
+\end{align*}
+\end{enumerate}
