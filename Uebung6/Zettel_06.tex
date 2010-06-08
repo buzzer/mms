@@ -4,5 +4,30 @@
 
 \subsection*{2. Gegeben sei die zweidimensionale isotrope Gauss-Funktion: $Gauss_{\sigma}(x,y)$}
 \subsubsection*{Berechnen Sie die Ableitung dieser Funktion nach $\sigma$, sowie die zweite Ableitung der Funktion nach x und die zweite Ableitung nach y.}
+1. Ableitung nach $\sigma$:
+\begin{align*}
+& \frac{d}{d \sigma}~\frac{1}{2 \pi \sigma^2}~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& -\frac{2}{2 \pi \sigma^3}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} + \frac{1}{2 \pi \sigma^2}~e^{-\frac{x^2 + y^2}{2 \sigma^2}}(-\frac{x^2 + y^2}{2}(-\frac{2}{\sigma^3}))\\
+=& e^{-\frac{x^2 + y^2}{2 \sigma^2}}(-\frac{1}{\pi \sigma^3} + \frac{1}{2 \pi \sigma^2} \frac{x^2 + y^2}{\sigma^3})\\
+=& e^{-\frac{x^2 + y^2}{2 \sigma^2}} (-\frac{1}{\pi \sigma^3} + \frac{x^2 + y^2}{2 \pi \sigma^5})\\
+=& e^{-\frac{x^2 + y^2}{2 \sigma^2}} \frac{1}{\pi \sigma^3} (\frac{x^2 + y^2}{2 \sigma^2} - 1)
+\end{align*}
+2. Doppelte Ableitung nach $x$:
+\begin{align*}
+& \frac{d^2}{d x^2}~\frac{1}{2 \pi \sigma^2}~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& \frac{d}{d x}~\frac{1}{2 \pi \sigma^2} (-\frac{2x}{2 \sigma^2})~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& \frac{d}{d x}~(-\frac{1}{2 \pi \sigma^4})~x~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& -\frac{1}{2 \pi \sigma^4}(e^{-\frac{x^2 + y^2}{2 \sigma^2}} + x~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (-\frac{2x}{2 \sigma^2}))\\
+=& \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2}{\sigma^2} - 1)
+\end{align*}
+3. Doppelte Ableitung nach $y$:
+\begin{align*}
+& \frac{d^2}{d y^2}~\frac{1}{2 \pi \sigma^2}~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& \frac{d}{d y}~\frac{1}{2 \pi \sigma^2} (-\frac{2y}{2 \sigma^2})~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& \frac{d}{d y}~(-\frac{1}{2 \pi \sigma^4})~y~e^{-\frac{x^2 + y^2}{2 \sigma^2}}\\
+=& -\frac{1}{2 \pi \sigma^4}(e^{-\frac{x^2 + y^2}{2 \sigma^2}} + y~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (-\frac{2y}{2 \sigma^2}))\\
+=& \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{y^2}{\sigma^2} - 1)
+\end{align*}
+
 \subsubsection*{Wie stehen diese Ableitungen in Beziehung? Beachte: Die Summe der zweiten Ableitungen nach x undy wird als \emph{Laplacian of Gaussion} bezeichnet und stellt einen \"ublichen Kantenoperator dar.}
 \subsubsection*{Wie kann man den \emph{Laplacian of Gaussion} in einem Gaussian Skalenraum effizient approximieren?}
