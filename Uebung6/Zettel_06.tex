@@ -31,18 +31,15 @@ Hermitesche Funktionen erlauben die Beschreibung singul\"arer Ereignisse, wie z.
 \end{align*}
 
 \subsubsection*{Wie stehen diese Ableitungen in Beziehung? Beachte: Die Summe der zweiten Ableitungen nach x undy wird als \emph{Laplacian of Gaussion} bezeichnet und stellt einen \"ublichen Kantenoperator dar.}
-<<<<<<< HEAD
 
-Die 1. Ableitung nach $\sigma$ stellt die Steigung der $Gauss_{\sigma}$-Kurve dar. Leitet man die Gauss-Funktion zweimal nach x, bzw. y ab erh\"alt man den Laplacian of Gaussian-Operator in x, bzw. in y-Richtung.
-Damit erkennt man in einer 2D-Funktion (z.B. ein Bild) Orte gro{\ss}er Ver\"anderungen (also Kanten an denen sich die Intensit\"at sehr ``schnell'' \"andert.
-=======
 F\"ur die Summe der zweiten Ableitungen nach x und y ergibt sich:
 \begin{align*}
 \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2}{\sigma^2} - 1) + \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{y^2}{\sigma^2} - 1)\\
 &= \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2}{\sigma^2} - 1 + \frac{y^2}{\sigma^2} - 1)\\
 &= \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2 + y^2}{\sigma^2} - 2)
 \end{align*}
->>>>>>> 08ba3ccabe0174026030e567e552a39542f7d02c
+Die 1. Ableitung nach $\sigma$ stellt die Steigung der $Gauss_{\sigma}$-Kurve dar. Leitet man die Gauss-Funktion zweimal nach x, bzw. y ab erh\"alt man den Laplacian of Gaussian-Operator in x, bzw. in y-Richtung.
+Damit erkennt man in einer 2D-Funktion (z.B. ein Bild) Orte gro{\ss}er Ver\"anderungen (also Kanten an denen sich die Intensit\"at sehr ``schnell'' \"andert.
 Siehe auch Abb. \ref{fig:1Abl}, \ref{fig:2Abl}, \ref{fig:LoG}.
 Abb. \ref{fig:2Abl} zeigt dabei die in x und y-ausgerichtete Suche nach Ver\"anderungen. Die Anwendung des  Laplace-Operators auf die Gauss-funktion macht hier nur Sinn um durch eine (Tiefpass-)Filterung (Gauss) ein ``\"uberreagieren'' des Laplace-Operators auf Rauschen (im Bild) zu minimieren.
 
