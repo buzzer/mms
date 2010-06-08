@@ -40,28 +40,37 @@ F\"ur die Summe der zweiten Ableitungen nach x und y ergibt sich:
 \end{align*}
 Die 1. Ableitung nach $\sigma$ stellt die Steigung der $Gauss_{\sigma}$-Kurve dar. Leitet man die Gauss-Funktion zweimal nach x, bzw. y ab erh\"alt man den Laplacian of Gaussian-Operator in x, bzw. in y-Richtung.
 Damit erkennt man in einer 2D-Funktion (z.B. ein Bild) Orte gro{\ss}er Ver\"anderungen (also Kanten an denen sich die Intensit\"at sehr ``schnell'' \"andert.
-Siehe auch Abb. \ref{fig:1Abl}, \ref{fig:2Abl}, \ref{fig:LoG}.
+Siehe auch Abb. \ref{fig:Gauss}, \ref{fig:1Abl}, \ref{fig:2Abl}, \ref{fig:LoG}.
 Abb. \ref{fig:2Abl} zeigt dabei die in x und y-ausgerichtete Suche nach Ver\"anderungen. Die Anwendung des  Laplace-Operators auf die Gauss-funktion macht hier nur Sinn um durch eine (Tiefpass-)Filterung (Gauss) ein ``\"uberreagieren'' des Laplace-Operators auf Rauschen (im Bild) zu minimieren.
+
+\begin{figure}[h] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.4\textwidth]{Uebung6/Gauss.pdf} 
+   \caption{$Gauss_{\sigma}(x,y)$}
+   \label{fig:Gauss}
+\end{figure}
 
 \begin{figure}[p] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.4\textwidth]{Uebung6/1Abl_sigma.pdf} 
-   \caption{$d^{2}/d\sigma$}
+   \caption{$d^{2}/d\sigma,\sigma=0,5$}
    \label{fig:1Abl}
 \end{figure}
 
 \begin{figure}[p] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.4\textwidth]{Uebung6/2Abl_xy.pdf} 
-   \caption{$d^{2}/dx^{2}$ und $d^{2}/dy^{2}$}
+   \caption{$d^{2}/dx^{2}$ und $d^{2}/dy^{2},\sigma=0,5$}
    \label{fig:2Abl}
 \end{figure}
 
 \begin{figure}[p] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.4\textwidth]{Uebung6/LoG.pdf} 
-   \caption{LoG}
+   \caption{LoG,$\sigma=0,5$}
    \label{fig:LoG}
 \end{figure}
 
 \subsubsection*{Wie kann man den \emph{Laplacian of Gaussion} in einem Gaussian Skalenraum effizient approximieren?}
+
+Den LoG-Operator kann man in diskreten R\"aumen (z.B. dig. Bilder) mit Hilfe einer Matrix (diskreter Kern) approximieren. Dabei entsprechen die Matrix-Elemente dem Funktionswert (neg. und pos.) des LoG-Operators.
