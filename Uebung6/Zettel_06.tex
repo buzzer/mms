@@ -1,7 +1,7 @@
 \section*{6. \"Ubung (Abgabe: 09.06.2010, 8.30 Uhr, schriftlich)}
 
 \subsection*{1. Diskutieren Sie die komplexwertige Gabor-Transformation und ihre Fourier-Transformierte. Welchen Bezug sehen Sie zu der Klasse der Hermitischen Funktionen?}
-Hermitesche Funktionen erlauben die Beschreibung singulärer Ereignisse, wie z.B. die Eigenschaften von einem Signal zum bestimmten Zeitpunkt. Bei der Gabor-Transformation wird versucht ein Signal mit Hilfe von Zeitfenstern in bestimmten Zeitintervallen zu untersuchen. Dabei ist die Zeitfensterfunktion ein Gauss. Und bei der Transformation wird die untersuchte Funktion mit der Gauss-Funktion multipliziert. Diese Eigenschaft wird auch bei hermiteschen Funktionen verwenden, wo ein hermitescher Polynom mit Gaussverteilung multipliziert wird.
+Hermitesche Funktionen erlauben die Beschreibung singul\"arer Ereignisse, wie z.B. die Eigenschaften von einem Signal zum bestimmten Zeitpunkt. Bei der Gabor-Transformation wird versucht ein Signal mit Hilfe von Zeitfenstern in bestimmten Zeitintervallen zu untersuchen. Dabei ist die Zeitfensterfunktion ein Gauss. Und bei der Transformation wird die untersuchte Funktion mit der Gauss-Funktion multipliziert. Diese Eigenschaft wird auch bei hermiteschen Funktionen verwenden, wo ein hermitescher Polynom mit Gaussverteilung multipliziert wird.
 
 \subsection*{2. Gegeben sei die zweidimensionale isotrope Gauss-Funktion: $Gauss_{\sigma}(x,y)$}
 \subsubsection*{Berechnen Sie die Ableitung dieser Funktion nach $\sigma$, sowie die zweite Ableitung der Funktion nach x und die zweite Ableitung nach y.}
@@ -11,7 +11,7 @@ Hermitesche Funktionen erlauben die Beschreibung singulärer Ereignisse, wie z.B
 =& -\frac{2}{2 \pi \sigma^3}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} + \frac{1}{2 \pi \sigma^2}~e^{-\frac{x^2 + y^2}{2 \sigma^2}}(-\frac{x^2 + y^2}{2}(-\frac{2}{\sigma^3}))\\
 =& e^{-\frac{x^2 + y^2}{2 \sigma^2}}(-\frac{1}{\pi \sigma^3} + \frac{1}{2 \pi \sigma^2} \frac{x^2 + y^2}{\sigma^3})\\
 =& e^{-\frac{x^2 + y^2}{2 \sigma^2}} (-\frac{1}{\pi \sigma^3} + \frac{x^2 + y^2}{2 \pi \sigma^5})\\
-=& e^{-\frac{x^2 + y^2}{2 \sigma^2}} \frac{1}{\pi \sigma^3} (\frac{x^2 + y^2}{2 \sigma^2} - 1)
+=& \frac{1}{\pi \sigma^3}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2 + y^2}{2 \sigma^2} - 1)
 \end{align*}
 2. Doppelte Ableitung nach $x$:
 \begin{align*}
@@ -30,5 +30,11 @@ Hermitesche Funktionen erlauben die Beschreibung singulärer Ereignisse, wie z.B
 =& \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{y^2}{\sigma^2} - 1)
 \end{align*}
 
-\subsubsection*{Wie stehen diese Ableitungen in Beziehung? Beachte: Die Summe der zweiten Ableitungen nach x undy wird als \emph{Laplacian of Gaussion} bezeichnet und stellt einen \"ublichen Kantenoperator dar.}
+\subsubsection*{Wie stehen diese Ableitungen in Beziehung? Beachte: Die Summe der zweiten Ableitungen nach x und y wird als \emph{Laplacian of Gaussion} bezeichnet und stellt einen \"ublichen Kantenoperator dar.}
+F\"ur die Summe der zweiten Ableitungen nach x und y ergibt sich:
+\begin{align*}
+\frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2}{\sigma^2} - 1) + \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{y^2}{\sigma^2} - 1)\\
+&= \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2}{\sigma^2} - 1 + \frac{y^2}{\sigma^2} - 1)\\
+&= \frac{1}{2 \pi \sigma^4}~e^{-\frac{x^2 + y^2}{2 \sigma^2}} (\frac{x^2 + y^2}{\sigma^2} - 2)
+\end{align*}
 \subsubsection*{Wie kann man den \emph{Laplacian of Gaussion} in einem Gaussian Skalenraum effizient approximieren?}
