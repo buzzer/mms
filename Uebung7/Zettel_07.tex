@@ -23,3 +23,26 @@ Das bedeutet, je mehr Dimensionen das Eingangssignal hat, desto geringer muss di
 \end{figure}
 
 \subsection*{1.b. Auf welche Weise h\"angt die Varianz des Lokalisierungsfehlers f\"ur die F\"alle n=1,2,3 von dem Grad des urspr\"unglichen Rauschens und dem Grad der Gl\"attung ab? Was bedeutet das f\"ur die Anwendung von schwellenwertbasierten Kantendetektoren in verrauschten zweidimensionalen Bildern?}
+
+Gesucht: \; Verh\"altnis $\mu$ zu $\sigma_{noise}$ und $\sigma_{Gauss}$ \\
+\begin{align*}
+\mu = Erwartungswert, \;
+\sigma &= Standardabweichung, \;
+\sigma^{2} =Varianz \\
+f(x) &=\begin{cases}
+\begin{array}{c}
+\frac{1}{2} \\
+-\frac{1}{2}
+\end{array} & \begin{array}{c}
+x>0\\
+x\leq0
+\end{array}\end{cases} \\
+g(x) &= \frac{1}{\sigma_{Gauss}\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma_{Gauss}})^{2}}, \; \int_{A}\rightarrow1 \\
+\mu &= \frac{\frac{1}{(2\sqrt{\pi}\sigma_{Gauss})^{n}}\sigma_{noise}^{2}}{(f_{b}^{'}(0))^{2}} \\
+f_{b}(x) &= f(x)*g(x) \\
+&= F^{-1}(F(x)\cdot G(x)) \\
+F(x) &= \int_{-\infty}^{\infty}\frac{1}{\sigma_{Gauss}\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma_{Gauss}})^{2}}
+\cdot e^{-j\omega x}dx
+\cdot (\int_{-\infty}^{0}-\frac{1}{2}e^{-j\omega x}dx+\int_{0}^{\infty}\frac{1}{2}e^{-j\omega x}dx)
+\end{align*}
+Integral der normierten Gauss-Funktion ist 1. Leider ergibt sich aus der Substraktion der weiteren Integrale 0 und l\"asst so keine weiteren Interpretationen zu!?
