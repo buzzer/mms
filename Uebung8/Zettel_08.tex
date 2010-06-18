@@ -1,0 +1,17 @@
+\section*{8. \"Ubung (Abgabe: 23.06.2010, 8.30 Uhr, schriftlich)}
+
+\subsection*{1.Begr\"unden Sie anhand des abgebildeten Grauwertgebirges, dass das Prinzip der Kausalit\"at f\"ur einen linearen homogenen isotropen Diffusionsprozess streng genommen nicht gilt.}
+
+Die Diffusion des abgebildeten Grauwertgebirges (und anderer Signale) entspricht einer Gl\"attung dieser (Faltung mit der Gauss-Normalverteilung im Ortsraum bzw. Zeitraum). Ferner legt man diesen Diffusionsprozess hier als linear (also unabh\"angig vom Ort im Signal), homogen (also gleichm\"a{\ss}ig \"uber dem Skalenraum) und isotrop (also lokal gleich in alle Richtungen) fest (1). \\
+Nun betrachtet man die Faltung zweier Gau{\ss}-verteilungen als invariant in der Hinsicht, dass wieder eine Gau{\ss}verteilung entsteht (mit gr\"o{\ss}erem Sigma und kleinerer Amplitude). \\
+Fasst man die lokalen und globalen Maxima und Sattelpunkte als lokale Gau{\ss}-verteilungen im originalem Grauwertgebirge auf, entsteht wegen (1) wieder ein Grauwertgebirge (mit kleinerer Amplitude und gr\"o{\ss}erer Bandbreite). \\
+Dies l\"asst sich streng genommen beliebig oft wiederholen und man bekommt immer wieder ein, zwar sehr gegl\"attetes, aber immer noch topologisch korrektes  Signal(d.h. gleiche Anzahl Maxima/Sattelpunkte). Leider f\"uhrt die notwendige Quantisierung in der digitalen Verarbeitung zu einer stetigen Ausl\"oschung ``zu kleiner'' Extrema aufgrund der nur diskreten (Flie{\ss}komma-) Genauigkeit.
+
+\subsection*{2. Gibt es nicht-konstante Funktionen $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$, bei denen die Zahl der lokalen Maxima bei einem solchen Diffusionsprozess niemals auf 1 f\"allt?}
+
+\subsection*{3. Wie kann man den Nachteil, dass der Gradientenbetrag an Ecken abnimmt, mit Hilfe von  Diffusionsmethoden verbessern?}
+Gradientenbetrag: $\sqrt{x^{2}+y^{2}}$ \\
+Idee: Gradientenbetrag nimmt an Ecken ab, da sich die zwei Richtungen (gleichstark) gegenseitig st\"oren. (aber wie?) \\
+Ans\"atze:  \\
+\emph{Edge-enhancing diffussion}: Diffussion entlang des Kontrastes \\
+\emph{Coherence-enhancing diffusion}: Gro{\ss}e Koh\"arenz bei geriechteten (anisotropen) Strukturen
