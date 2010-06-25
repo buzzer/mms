@@ -8,7 +8,7 @@ Fasst man die lokalen und globalen Maxima und Sattelpunkte als lokale Gau{\ss}-v
 Dies l\"asst sich streng genommen beliebig oft wiederholen und man bekommt immer wieder ein, zwar sehr gegl\"attetes, aber immer noch topologisch korrektes  Signal(d.h. gleiche Anzahl Maxima/Sattelpunkte). Leider f\"uhrt die notwendige Quantisierung in der digitalen Verarbeitung zu einer stetigen Ausl\"oschung ``zu kleiner'' Extrema aufgrund der nur diskreten (Flie{\ss}komma-) Genauigkeit.
 
 \subsection*{2. Gibt es nicht-konstante Funktionen $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$, bei denen die Zahl der lokalen Maxima bei einem solchen Diffusionsprozess niemals auf 1 f\"allt?}
-
+Ja, es gibt nicht-konstante Funktionen $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$, bei denen die Zahl der lokalen Maxima nach einer linearen homogenen isotropen Diffusionsprozess niemals auf 1 f\"allt. Ein Beispiel f\"ur so eine Funktion w\"are: $f(x,y) = \sin{x}+\sin{y}$. Egal wie oft der Diffusionsprozess auf diese Funktion angewandt wird, bleibt die Anzahl der lokalen Maxima konstant. 
 \subsection*{3. Wie kann man den Nachteil, dass der Gradientenbetrag an Ecken abnimmt, mit Hilfe von  Diffusionsmethoden verbessern?}
 Gradientenbetrag: $\sqrt{x^{2}+y^{2}}$ \\
 Idee: Gradientenbetrag nimmt an Ecken ab, da sich die zwei Richtungen (gleichstark) gegenseitig st\"oren. (aber wie?) \\
