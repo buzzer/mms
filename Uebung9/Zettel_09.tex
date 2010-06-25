@@ -1,0 +1,23 @@
+\section*{9. \"Ubung (Abgabe: 30.06.2010, 8.30 Uhr, schriftlich)}
+
+\subsection*{a) Entwerfen Sie ein Verfahren, das geeignet ist, die Frequenz m\"oglichst robust zu berechnen. Dabei braucht die genaue Position im Bild, an der die Schwingung beobachtet werden kann, nicht ermittelt werden.}
+Die bewegte Masse bleibt bez\"uglich der (Pixel-) Gr\"o{\ss}e auf dem Bild (bereich) der Kamera gleich. Des Weiteren bewegt sich nichts vor dem (einfarbigem) Hintergrund. \\
+Fourier-Transformiert man nun alle Bilder der chronologischen Folge bleibt das Frequenzspektrum \"ahnlich zwischen den Bildern.
+Nur das Phasen spektrum \"andert sich mit der Bewegung der Masse. \\
+Man k\"onnte die Phasen\"ahnlichkeit 2er Bilder ausnutzen um anhand ihrer Zeitstempel die Periode (und damit die Frequenz) zu bestimmen. Das Problem ist ein geeignetes \"Ahnlichkeitsma{\ss} f\"ur das Phasenspektrum. \\
+W\"ahlt man einen geeigneten Bildausschnitt aus (im ``Bewegungsraum'' der Masse) kann man die Periode auch geschickt durch Messung der \"Uberdeckung messen (ideal: T=t2-t1 oder aber T=t3-t1). \\
+Eine andere Idee ist mit Hilfe eines (schnellen) Kantenfinders eine Kante der Masse \"uber die Bildfolge zu folgen und so die Periode zu bestimmen. \\
+Hier sollten wir uns auf eine Methode festlegen.
+
+\subsection*{b) Wie verh\"alt sich Ihr Verfahren bei einer zeitlich ged\"ampften Schwingung?}
+Me{\ss}bereich muss hierzu adaptive sein.
+Mit Hilfe der Phasenspektrum-Methode ist das kein Problem. Auch ein (zuverl\"assiger) Kantenfinder passti sich der kleiner werdenden Amplitude an.
+
+\subsection*{c) Wie verh\"alt sich Ihr Verfahren bei uneinheitlichem, aber unbewegtem Hintergrund?}
+Das Phasenspektrum sollte relative unempfindlich gegen\"uber statischen Unregelm\"a{\ss}igkeiten sein.
+
+\subsection*{d) Wei verh\"alt sich Ihr Verfahren bei der gleichzeitigen Aufnahme von mehreren Federgewichten mit unterschiedlichen Frequenzen?}
+Schlecht
+
+\subsection*{e) K\"onne Sie Ihr Verfahren so modifizieren, dass es auch die Frequenz von Kreisbewegungen und Schwingungen senkrecht zu Bildebene  erfassen kann?}
+Amplituden + Phasenspektrum??
